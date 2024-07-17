@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import course from '../components/course';
+// import Source from '../components/Source';
 import Footer from '../components/Footer';
 
 function Courses() {
@@ -8,7 +8,7 @@ function Courses() {
         <>
             <div className=''>
                 <Navbar />
-                <course />
+                {/* <Source /> */}
                 <div className='max-w-screen-full container pt-40 mx-auto w-full:px-10 flex-row dark:bg-slate-900 dark:text-white'>
                     <Footer />
                 </div>
