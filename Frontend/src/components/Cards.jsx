@@ -2,6 +2,10 @@ import React from 'react';
 
 function Cards({ item }) {
     console.log(item);
+
+    if (!item) {
+        return item;
+    }
     return (
         <>
             <div className="mt-8 p-3">

@@ -1,10 +1,10 @@
  import React, { useEffect, useState } from 'react';
  import axios from "axios";
  import Navbar from './Navbar';
- import Source from "./Source";
- import Footer from './Footer';
  import { Link } from 'react-router-dom';
  import Book from '../../../Backend/model/book.model';
+import Cards from './Cards';
+
 
  function Source() {
     const [book, setBook] = useState([])
@@ -39,14 +39,13 @@
             </Link>
           </div>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
-            {Book.map((item)=>(
+            {book.map((item)=>(
               <Cards key={item.id} item={item} />
             ))}
           </div>
         </div>
         <Navbar />
-        <Source />
-        <Footer />
+        <Cards />
       </>
     )
   }
